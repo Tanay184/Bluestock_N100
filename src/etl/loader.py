@@ -4,13 +4,13 @@ import logging
 import os
 import sqlite3
 import time
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pandas as pd
 from dotenv import load_dotenv
 
-from src.etl.normaliser import PARSE_ERROR, normalize_ticker, normalize_year
+from src.etl.normaliser import NON_ANNUAL, PARSE_ERROR, normalize_ticker, normalize_year
 from src.etl.validator import YEAR_TABLES, validate
 
 load_dotenv()
@@ -18,6 +18,7 @@ logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = ROOT / os.getenv("DB_PATH", "data/nifty100.db")
 OUT = ROOT / "output"
+TICKER_ALIASES = {"AGTL": "ATGL"}
 CORE = [
     "companies",
     "profitandloss",
@@ -73,7 +74,9 @@ def normalise(t: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
         c[col] = pd.to_numeric(c[col], errors="coerce")
     for n, d in t.items():
         if n != "companies":
-            d["company_id"] = d["company_id"].map(normalize_ticker)
+            d["company_id"] = (
+                d["company_id"].map(normalize_ticker).replace(TICKER_ALIASES)
+            )
     for n in YEAR_TABLES:
         t[n]["year"] = t[n]["year"].map(normalize_year)
     skip = {"id", "company_id", "year", "date"}
@@ -107,7 +110,7 @@ def clean(t: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
             continue
         d = d[d["company_id"].isin(ids)]
         if n in YEAR_TABLES:
-            d = d[d["year"] != PARSE_ERROR]
+            d = d[~d["year"].isin([PARSE_ERROR, NON_ANNUAL])]
         if n == "documents":
             d = d.dropna(subset=["year"]).astype({"year": int})
         if n in KEYS:
@@ -150,6 +153,8 @@ def main() -> None:
     t = normalise(raw)
     failures = validate(t, check_urls=os.getenv("CHECK_URLS") == "1")
     t = clean(t)
+    post = validate(t)
+    unres = post[post.severity == "CRITICAL"].groupby("table").size()
     times = build_db(t)
     OUT.mkdir(exist_ok=True)
     failures.to_csv(OUT / "validation_failures.csv", index=False)
@@ -165,7 +170,8 @@ def main() -> None:
                 "rows_out": out,
                 "rejected": rows_in[n] - out,
                 "critical_failures": int(crit.get(n, 0)),
-                "timestamp": datetime.now().isoformat(timespec="seconds"),
+                "critical_unresolved": int(unres.get(n, 0)),
+                "timestamp": datetime.now(UTC).isoformat(timespec="seconds"),
                 "runtime_s": times[n],
             }
         )

@@ -11,10 +11,6 @@ DQ-02,profitandloss,ADANIPORTS,2021-03,"company_id,year",duplicate key,CRITICAL
 DQ-02,profitandloss,ADANIPORTS,2022-03,"company_id,year",duplicate key,CRITICAL
 DQ-02,profitandloss,ADANIPORTS,2023-03,"company_id,year",duplicate key,CRITICAL
 DQ-02,profitandloss,ADANIPORTS,2024-03,"company_id,year",duplicate key,CRITICAL
-DQ-02,profitandloss,ADANIPORTS,PARSE_ERROR,"company_id,year",duplicate key,CRITICAL
-DQ-02,profitandloss,AMBUJACEM,PARSE_ERROR,"company_id,year",duplicate key,CRITICAL
-DQ-02,profitandloss,HCLTECH,PARSE_ERROR,"company_id,year",duplicate key,CRITICAL
-DQ-02,profitandloss,SHREECEM,PARSE_ERROR,"company_id,year",duplicate key,CRITICAL
 DQ-02,balancesheet,ASIANPAINT,2013-03,"company_id,year",duplicate key,CRITICAL
 DQ-02,balancesheet,ASIANPAINT,2014-03,"company_id,year",duplicate key,CRITICAL
 DQ-02,balancesheet,ASIANPAINT,2015-03,"company_id,year",duplicate key,CRITICAL
@@ -149,7 +145,7 @@ DQ-03,profitandloss,ULTRACEMCO,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ULTRACEMCO,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ULTRACEMCO,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ULTRACEMCO,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,ULTRACEMCO,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNIONBANK,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNIONBANK,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNIONBANK,2015-03,company_id,orphan FK,CRITICAL
@@ -162,7 +158,7 @@ DQ-03,profitandloss,UNIONBANK,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNIONBANK,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNIONBANK,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNIONBANK,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,UNIONBANK,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,UNIONBANK,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNITDSPR,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNITDSPR,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNITDSPR,2015-03,company_id,orphan FK,CRITICAL
@@ -175,7 +171,7 @@ DQ-03,profitandloss,UNITDSPR,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNITDSPR,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNITDSPR,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,UNITDSPR,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,UNITDSPR,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,UNITDSPR,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VBL,2012-12,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VBL,2013-12,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VBL,2014-12,company_id,orphan FK,CRITICAL
@@ -188,7 +184,7 @@ DQ-03,profitandloss,VBL,2020-12,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VBL,2021-12,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VBL,2022-12,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VBL,2023-12,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,VBL,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,VBL,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VEDL,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VEDL,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VEDL,2015-03,company_id,orphan FK,CRITICAL
@@ -201,7 +197,7 @@ DQ-03,profitandloss,VEDL,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VEDL,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VEDL,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,VEDL,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,VEDL,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,VEDL,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,WIPRO,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,WIPRO,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,WIPRO,2015-03,company_id,orphan FK,CRITICAL
@@ -214,7 +210,7 @@ DQ-03,profitandloss,WIPRO,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,WIPRO,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,WIPRO,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,WIPRO,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,WIPRO,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,WIPRO,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZOMATO,2018-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZOMATO,2019-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZOMATO,2020-03,company_id,orphan FK,CRITICAL
@@ -222,7 +218,7 @@ DQ-03,profitandloss,ZOMATO,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZOMATO,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZOMATO,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZOMATO,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,ZOMATO,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,ZOMATO,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZYDUSLIFE,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZYDUSLIFE,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZYDUSLIFE,2015-03,company_id,orphan FK,CRITICAL
@@ -235,7 +231,7 @@ DQ-03,profitandloss,ZYDUSLIFE,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZYDUSLIFE,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZYDUSLIFE,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,profitandloss,ZYDUSLIFE,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,profitandloss,ZYDUSLIFE,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZYDUSLIFE,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZYDUSLIFE,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZYDUSLIFE,2015-03,company_id,orphan FK,CRITICAL
@@ -248,7 +244,7 @@ DQ-03,balancesheet,ZYDUSLIFE,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZYDUSLIFE,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZYDUSLIFE,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZYDUSLIFE,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,balancesheet,ZYDUSLIFE,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZOMATO,2018-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZOMATO,2019-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZOMATO,2020-03,company_id,orphan FK,CRITICAL
@@ -256,7 +252,7 @@ DQ-03,balancesheet,ZOMATO,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZOMATO,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZOMATO,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ZOMATO,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,balancesheet,ZOMATO,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,balancesheet,ZOMATO,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,WIPRO,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,WIPRO,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,WIPRO,2015-03,company_id,orphan FK,CRITICAL
@@ -269,7 +265,7 @@ DQ-03,balancesheet,WIPRO,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,WIPRO,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,WIPRO,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,WIPRO,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,balancesheet,WIPRO,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,balancesheet,WIPRO,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,VEDL,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,VEDL,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,VEDL,2015-03,company_id,orphan FK,CRITICAL
@@ -282,7 +278,7 @@ DQ-03,balancesheet,VEDL,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,VEDL,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,VEDL,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,VEDL,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,balancesheet,VEDL,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,balancesheet,VEDL,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNITDSPR,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNITDSPR,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNITDSPR,2015-03,company_id,orphan FK,CRITICAL
@@ -295,7 +291,7 @@ DQ-03,balancesheet,UNITDSPR,2021-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNITDSPR,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNITDSPR,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNITDSPR,2024-03,company_id,orphan FK,CRITICAL
-DQ-03,balancesheet,UNITDSPR,PARSE_ERROR,company_id,orphan FK,CRITICAL
+DQ-03,balancesheet,UNITDSPR,NON_ANNUAL,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNIONBANK,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNIONBANK,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,UNIONBANK,2015-03,company_id,orphan FK,CRITICAL
@@ -321,13 +317,6 @@ DQ-03,balancesheet,ULTRACEMCO,2022-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ULTRACEMCO,2023-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ULTRACEMCO,2024-03,company_id,orphan FK,CRITICAL
 DQ-03,balancesheet,ULTRACEMCO,2024-09,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2018-03,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2019-03,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2020-03,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2021-03,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2022-03,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2023-03,company_id,orphan FK,CRITICAL
-DQ-03,cashflow,AGTL,2024-03,company_id,orphan FK,CRITICAL
 DQ-03,cashflow,ULTRACEMCO,2013-03,company_id,orphan FK,CRITICAL
 DQ-03,cashflow,ULTRACEMCO,2014-03,company_id,orphan FK,CRITICAL
 DQ-03,cashflow,ULTRACEMCO,2015-03,company_id,orphan FK,CRITICAL
@@ -588,7 +577,7 @@ DQ-05,profitandloss,AXISBANK,2021-03,opm_percentage,OPM differs from computed >=
 DQ-05,profitandloss,AXISBANK,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,AXISBANK,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,AXISBANK,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,AXISBANK,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,AXISBANK,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BAJFINANCE,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BAJFINANCE,2016-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BAJFINANCE,2017-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -599,7 +588,7 @@ DQ-05,profitandloss,BAJFINANCE,2021-03,opm_percentage,OPM differs from computed 
 DQ-05,profitandloss,BAJFINANCE,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BAJFINANCE,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BAJFINANCE,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,BAJFINANCE,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,BAJFINANCE,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BANKBARODA,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BANKBARODA,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BANKBARODA,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -612,7 +601,7 @@ DQ-05,profitandloss,BANKBARODA,2021-03,opm_percentage,OPM differs from computed 
 DQ-05,profitandloss,BANKBARODA,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BANKBARODA,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,BANKBARODA,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,BANKBARODA,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,BANKBARODA,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CANBK,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CANBK,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CANBK,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -625,7 +614,7 @@ DQ-05,profitandloss,CANBK,2021-03,opm_percentage,OPM differs from computed >=1,W
 DQ-05,profitandloss,CANBK,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CANBK,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CANBK,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,CANBK,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,CANBK,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CHOLAFIN,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CHOLAFIN,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CHOLAFIN,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -638,7 +627,7 @@ DQ-05,profitandloss,CHOLAFIN,2021-03,opm_percentage,OPM differs from computed >=
 DQ-05,profitandloss,CHOLAFIN,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CHOLAFIN,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CHOLAFIN,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,CHOLAFIN,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,CHOLAFIN,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CIPLA,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CIPLA,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CIPLA,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -651,7 +640,7 @@ DQ-05,profitandloss,CIPLA,2021-03,opm_percentage,OPM differs from computed >=1,W
 DQ-05,profitandloss,CIPLA,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CIPLA,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,CIPLA,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,CIPLA,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,CIPLA,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,COALINDIA,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,COALINDIA,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,COALINDIA,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -664,7 +653,7 @@ DQ-05,profitandloss,COALINDIA,2021-03,opm_percentage,OPM differs from computed >
 DQ-05,profitandloss,COALINDIA,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,COALINDIA,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,COALINDIA,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,COALINDIA,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,COALINDIA,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCBANK,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCBANK,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCBANK,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -677,7 +666,7 @@ DQ-05,profitandloss,HDFCBANK,2021-03,opm_percentage,OPM differs from computed >=
 DQ-05,profitandloss,HDFCBANK,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCBANK,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCBANK,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,HDFCBANK,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,HDFCBANK,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCLIFE,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCLIFE,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCLIFE,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -690,7 +679,7 @@ DQ-05,profitandloss,HDFCLIFE,2021-03,opm_percentage,OPM differs from computed >=
 DQ-05,profitandloss,HDFCLIFE,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCLIFE,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HDFCLIFE,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,HDFCLIFE,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,HDFCLIFE,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HEROMOTOCO,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HEROMOTOCO,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HEROMOTOCO,2016-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -702,7 +691,7 @@ DQ-05,profitandloss,HEROMOTOCO,2021-03,opm_percentage,OPM differs from computed 
 DQ-05,profitandloss,HEROMOTOCO,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HEROMOTOCO,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HEROMOTOCO,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,HEROMOTOCO,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,HEROMOTOCO,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDALCO,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDALCO,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDALCO,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -715,7 +704,7 @@ DQ-05,profitandloss,HINDALCO,2021-03,opm_percentage,OPM differs from computed >=
 DQ-05,profitandloss,HINDALCO,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDALCO,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDALCO,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,HINDALCO,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,HINDALCO,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDUNILVR,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDUNILVR,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDUNILVR,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -728,7 +717,7 @@ DQ-05,profitandloss,HINDUNILVR,2021-03,opm_percentage,OPM differs from computed 
 DQ-05,profitandloss,HINDUNILVR,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDUNILVR,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,HINDUNILVR,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,HINDUNILVR,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,HINDUNILVR,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIBANK,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIBANK,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIBANK,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -741,7 +730,7 @@ DQ-05,profitandloss,ICICIBANK,2021-03,opm_percentage,OPM differs from computed >
 DQ-05,profitandloss,ICICIBANK,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIBANK,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIBANK,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,ICICIBANK,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,ICICIBANK,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIGI,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIGI,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIGI,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -754,7 +743,7 @@ DQ-05,profitandloss,ICICIGI,2021-03,opm_percentage,OPM differs from computed >=1
 DQ-05,profitandloss,ICICIGI,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIGI,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIGI,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,ICICIGI,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,ICICIGI,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIPRULI,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIPRULI,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIPRULI,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -767,7 +756,7 @@ DQ-05,profitandloss,ICICIPRULI,2021-03,opm_percentage,OPM differs from computed 
 DQ-05,profitandloss,ICICIPRULI,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIPRULI,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,ICICIPRULI,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,ICICIPRULI,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,ICICIPRULI,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDUSINDBK,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDUSINDBK,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDUSINDBK,2015-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -780,7 +769,7 @@ DQ-05,profitandloss,INDUSINDBK,2021-03,opm_percentage,OPM differs from computed 
 DQ-05,profitandloss,INDUSINDBK,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDUSINDBK,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDUSINDBK,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,INDUSINDBK,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,INDUSINDBK,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,JIOFIN,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,KOTAKBANK,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,KOTAKBANK,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -794,7 +783,7 @@ DQ-05,profitandloss,KOTAKBANK,2021-03,opm_percentage,OPM differs from computed >
 DQ-05,profitandloss,KOTAKBANK,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,KOTAKBANK,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,KOTAKBANK,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,KOTAKBANK,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,KOTAKBANK,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,SUNPHARMA,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDIGO,2013-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDIGO,2014-03,opm_percentage,OPM differs from computed >=1,WARNING
@@ -808,116 +797,116 @@ DQ-05,profitandloss,INDIGO,2021-03,opm_percentage,OPM differs from computed >=1,
 DQ-05,profitandloss,INDIGO,2022-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDIGO,2023-03,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-05,profitandloss,INDIGO,2024-03,opm_percentage,OPM differs from computed >=1,WARNING
-DQ-05,profitandloss,INDIGO,PARSE_ERROR,opm_percentage,OPM differs from computed >=1,WARNING
+DQ-05,profitandloss,INDIGO,NON_ANNUAL,opm_percentage,OPM differs from computed >=1,WARNING
 DQ-06,profitandloss,ADANIENSOL,2014-03,sales,sales <= 0,WARNING
-DQ-07,profitandloss,ABB,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ADANIENSOL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ADANIENT,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ADANIGREEN,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ADANIPORTS,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ADANIPORTS,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ADANIPOWER,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,AMBUJACEM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,AMBUJACEM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,APOLLOHOSP,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ASIANPAINT,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ATGL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BAJAJ-AUTO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,AXISBANK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BAJAJFINSV,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BAJAJHLDNG,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BAJFINANCE,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BANKBARODA,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BHARTIARTL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BEL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BHEL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BOSCHLTD,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BPCL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,BRITANNIA,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,CANBK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,CHOLAFIN,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,CIPLA,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,COALINDIA,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,DABUR,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,DIVISLAB,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,DLF,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,DMART,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,DRREDDY,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,EICHERMOT,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,GAIL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,GODREJCP,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,GRASIM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HAL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HAVELLS,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HCLTECH,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HCLTECH,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HDFCBANK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HDFCLIFE,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HEROMOTOCO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HINDALCO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,HINDUNILVR,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ICICIBANK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ICICIGI,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ICICIPRULI,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,INDUSINDBK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,INFY,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,IOC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,IRCTC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,IRFC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ITC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,JINDALSTEL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,JIOFIN,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,JSWENERGY,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,JSWSTEEL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,KOTAKBANK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,LICI,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,LODHA,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,LT,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,LTIM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,M&M,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,MARUTI,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,MOTHERSON,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,NAUKRI,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,NESTLEIND,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,NHPC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,NTPC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ONGC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,PFC,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,PIDILITIND,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,PNB,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,POWERGRID,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,RECLTD,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,RELIANCE,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,SBILIFE,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,SBIN,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,SHREECEM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,SHREECEM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,SHRIRAMFIN,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,SUNPHARMA,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TATACONSUM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TATAMOTORS,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TATAPOWER,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TATASTEEL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TCS,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TECHM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TITAN,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TORNTPHARM,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TRENT,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,TVSMOTOR,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ULTRACEMCO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,UNIONBANK,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,UNITDSPR,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,VBL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,VEDL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,WIPRO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ZOMATO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,ZYDUSLIFE,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,profitandloss,INDIGO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,balancesheet,ZYDUSLIFE,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,balancesheet,ZOMATO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,balancesheet,WIPRO,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,balancesheet,VEDL,PARSE_ERROR,year,unparseable year,CRITICAL
-DQ-07,balancesheet,UNITDSPR,PARSE_ERROR,year,unparseable year,CRITICAL
+DQ-07,profitandloss,ABB,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ADANIENSOL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ADANIENT,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ADANIGREEN,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ADANIPORTS,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ADANIPORTS,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ADANIPOWER,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,AMBUJACEM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,AMBUJACEM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,APOLLOHOSP,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ASIANPAINT,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ATGL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BAJAJ-AUTO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,AXISBANK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BAJAJFINSV,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BAJAJHLDNG,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BAJFINANCE,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BANKBARODA,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BHARTIARTL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BEL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BHEL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BOSCHLTD,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BPCL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,BRITANNIA,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,CANBK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,CHOLAFIN,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,CIPLA,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,COALINDIA,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,DABUR,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,DIVISLAB,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,DLF,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,DMART,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,DRREDDY,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,EICHERMOT,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,GAIL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,GODREJCP,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,GRASIM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HAL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HAVELLS,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HCLTECH,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HCLTECH,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HDFCBANK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HDFCLIFE,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HEROMOTOCO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HINDALCO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,HINDUNILVR,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ICICIBANK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ICICIGI,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ICICIPRULI,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,INDUSINDBK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,INFY,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,IOC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,IRCTC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,IRFC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ITC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,JINDALSTEL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,JIOFIN,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,JSWENERGY,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,JSWSTEEL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,KOTAKBANK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,LICI,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,LODHA,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,LT,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,LTIM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,M&M,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,MARUTI,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,MOTHERSON,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,NAUKRI,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,NESTLEIND,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,NHPC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,NTPC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ONGC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,PFC,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,PIDILITIND,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,PNB,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,POWERGRID,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,RECLTD,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,RELIANCE,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,SBILIFE,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,SBIN,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,SHREECEM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,SHREECEM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,SHRIRAMFIN,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,SUNPHARMA,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TATACONSUM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TATAMOTORS,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TATAPOWER,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TATASTEEL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TCS,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TECHM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TITAN,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TORNTPHARM,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TRENT,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,TVSMOTOR,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ULTRACEMCO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,UNIONBANK,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,UNITDSPR,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,VBL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,VEDL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,WIPRO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ZOMATO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,ZYDUSLIFE,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,profitandloss,INDIGO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,balancesheet,ZYDUSLIFE,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,balancesheet,ZOMATO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,balancesheet,WIPRO,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,balancesheet,VEDL,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
+DQ-07,balancesheet,UNITDSPR,NON_ANNUAL,year,non-annual period (TTM/partial) excluded,WARNING
 DQ-09,cashflow,TVSMOTOR,2022-03,net_cash_flow,mismatch > 10 Cr,WARNING
 DQ-11,profitandloss,ADANIENT,2014-03,tax_percentage,outside 0-60,WARNING
 DQ-11,profitandloss,ADANIGREEN,2017-03,tax_percentage,outside 0-60,WARNING
@@ -1040,8 +1029,4 @@ DQ-14,profitandloss,TATAPOWER,2014-03,eps,eps<=0 with profit>0,WARNING
 DQ-14,profitandloss,VBL,2016-12,eps,eps<=0 with profit>0,WARNING
 DQ-14,profitandloss,ZOMATO,2024-03,eps,eps<=0 with profit>0,WARNING
 DQ-15,balancesheet,ALL,,total_assets,0 rows not strictly balanced,INFO
-DQ-16,profitandloss,JIOFIN,,year,only 3 years,WARNING
-DQ-16,balancesheet,JIOFIN,,year,only 3 years,WARNING
-DQ-16,balancesheet,SBIN,,year,only 0 years,WARNING
-DQ-16,cashflow,ATGL,,year,only 0 years,WARNING
 DQ-16,cashflow,JIOFIN,,year,only 2 years,WARNING

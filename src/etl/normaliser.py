@@ -6,6 +6,7 @@ import re
 import pandas as pd
 
 PARSE_ERROR = "PARSE_ERROR"
+NON_ANNUAL = "NON_ANNUAL"
 _MONTHS = {
     n.lower(): i
     for i in range(1, 13)
@@ -31,6 +32,13 @@ def normalize_year(value) -> str:
     if isinstance(value, float) and value.is_integer():
         value = int(value)
     s = str(value).strip()
+    if (
+        s.upper() == "TTM"
+        or re.search(r"\dm$", s, re.IGNORECASE)
+        or re.fullmatch(r"[A-Za-z]+[\s\-]*\d{4}\s+\d{1,2}", s)
+        or re.fullmatch(r"\d{4}\.\d+", s)
+    ):
+        return NON_ANNUAL
     if m := re.fullmatch(r"(\d{4})-(\d{2})", s):
         return s if 1 <= int(m[2]) <= 12 else PARSE_ERROR
     if re.fullmatch(r"\d{4}", s):

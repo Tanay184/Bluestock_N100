@@ -3,6 +3,8 @@
 import pytest
 
 from src.etl.normaliser import PARSE_ERROR as PE
+
+NA = "NON_ANNUAL"
 from src.etl.normaliser import normalize_ticker, normalize_year
 
 YEARS = [
@@ -30,6 +32,10 @@ YEARS = [
     (None, PE),
     ("2023-13", PE),
     ("Foo-23", PE),
+    ("TTM", NA),
+    ("Mar 2016 9m", NA),
+    ("Mar 2023 15", NA),
+    (2024.5, NA),
 ]
 TICKERS = [
     ("TCS", "TCS"),

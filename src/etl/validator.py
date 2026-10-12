@@ -4,12 +4,13 @@ import logging
 
 import pandas as pd
 
-from src.etl.normaliser import PARSE_ERROR
+from src.etl.normaliser import NON_ANNUAL, PARSE_ERROR
 
 logger = logging.getLogger(__name__)
 COLS = ["rule_id", "table", "company_id", "year", "field", "issue", "severity"]
 TS = ["profitandloss", "balancesheet", "cashflow"]
 YEAR_TABLES = TS + ["financial_ratios"]
+BAD = [PARSE_ERROR, NON_ANNUAL]
 
 
 def _rows(rule, table, df, field, issue, severity) -> list[dict]:
@@ -71,7 +72,7 @@ def validate(t: dict[str, pd.DataFrame], check_urls: bool = False) -> pd.DataFra
         "CRITICAL",
     )
     for n in TS:
-        d = t[n]
+        d = t[n][~t[n]["year"].isin(BAD)]
         f += _rows(
             "DQ-02",
             n,
@@ -120,14 +121,24 @@ def validate(t: dict[str, pd.DataFrame], check_urls: bool = False) -> pd.DataFra
         "WARNING",
     )
     for n in YEAR_TABLES:
+        d = t[n]
         f += _rows(
             "DQ-07",
             n,
-            t[n][t[n]["year"] == PARSE_ERROR],
+            d[d["year"] == PARSE_ERROR],
             "year",
             "unparseable year",
             "CRITICAL",
         )
+        f += _rows(
+            "DQ-07",
+            n,
+            d[d["year"] == NON_ANNUAL],
+            "year",
+            "non-annual period (TTM/partial) excluded",
+            "WARNING",
+        )
+
     for n, d in t.items():
         col = "id" if n == "companies" else "company_id"
         ln = d[col].astype(str).str.len()
@@ -202,24 +213,25 @@ def validate(t: dict[str, pd.DataFrame], check_urls: bool = False) -> pd.DataFra
         }
     )
     for n in TS:
+        valid = t[n][~t[n]["year"].isin(BAD)]
         cnt = (
-            t[n]
-            .groupby("company_id")["year"]
+            valid.groupby("company_id")["year"]
             .nunique()
             .reindex(sorted(ids), fill_value=0)
         )
-        for c in cnt[cnt < 5].index:
-            f.append(
-                {
-                    "rule_id": "DQ-16",
-                    "table": n,
-                    "company_id": c,
-                    "year": None,
-                    "field": "year",
-                    "issue": f"only {cnt[c]} years",
-                    "severity": "WARNING",
-                }
-            )
+
+    for c in cnt[cnt < 5].index:
+        f.append(
+            {
+                "rule_id": "DQ-16",
+                "table": n,
+                "company_id": c,
+                "year": None,
+                "field": "year",
+                "issue": f"only {cnt[c]} years",
+                "severity": "WARNING",
+            }
+        )
     out = pd.DataFrame(f, columns=COLS)
     logger.info("validation: %d failures", len(out))
     return out
