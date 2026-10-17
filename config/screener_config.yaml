@@ -1,0 +1,42 @@
+# Columns: roe roce npm opm de icr fcf fcf_margin fcf_yield rev_cagr_3yr rev_cagr_5yr
+#          pat_cagr_5yr eps_cagr_5yr pe pb ev_ebitda div_yield payout sales de_change
+top_n: 50
+presets:
+  quality_compounder:
+    filters:
+      - {metric: roe, op: ">", value: 15}
+      - {metric: de, op: "<", value: 1.0}
+      - {metric: fcf, op: ">", value: 0}
+      - {metric: rev_cagr_5yr, op: ">", value: 10}
+    rank_by: screen_score
+  value_pick:
+    filters:
+      - {metric: pe, op: "<", value: 20}
+      - {metric: pb, op: "<", value: 3.0}
+      - {metric: de, op: "<", value: 2.0}
+      - {metric: div_yield, op: ">", value: 1}
+    rank_by: fcf_yield
+  growth_accelerator:
+    filters:
+      - {metric: pat_cagr_5yr, op: ">", value: 20}
+      - {metric: rev_cagr_5yr, op: ">", value: 15}
+      - {metric: de, op: "<", value: 2.0}
+    rank_by: pat_cagr_5yr
+  dividend_champion:
+    filters:
+      - {metric: div_yield, op: ">", value: 2}
+      - {metric: payout, op: "<", value: 80}
+      - {metric: fcf, op: ">", value: 0}
+    rank_by: div_yield
+  debt_free_blue_chip:
+    filters:
+      - {metric: de, op: "==", value: 0}
+      - {metric: roe, op: ">", value: 12}
+      - {metric: sales, op: ">", value: 5000}
+    rank_by: roe
+  turnaround_watch:
+    filters:
+      - {metric: rev_cagr_3yr, op: ">", value: 10}
+      - {metric: fcf, op: ">", value: 0}
+      - {metric: de_change, op: "<", value: 0}
+    rank_by: rev_cagr_3yr
