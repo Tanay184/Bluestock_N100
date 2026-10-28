@@ -1,0 +1,108 @@
+{
+  "run_at": "2026-10-28T05:01:44+00:00",
+  "api_up": true,
+  "dashboard_up": true,
+  "load_test": {
+    "calls": 10,
+    "ok": 10,
+    "total_s": 0.16,
+    "slowest_s": 0.15,
+    "passed": true
+  },
+  "endpoints": [
+    {
+      "path": "/health",
+      "status": 200,
+      "ms": 5.4
+    },
+    {
+      "path": "/companies",
+      "status": 200,
+      "ms": 17.0
+    },
+    {
+      "path": "/companies/TCS",
+      "status": 200,
+      "ms": 17.2
+    },
+    {
+      "path": "/companies/TCS/pl",
+      "status": 200,
+      "ms": 32.3
+    },
+    {
+      "path": "/companies/TCS/bs",
+      "status": 200,
+      "ms": 31.2
+    },
+    {
+      "path": "/companies/TCS/cashflow",
+      "status": 200,
+      "ms": 29.1
+    },
+    {
+      "path": "/companies/TCS/ratios",
+      "status": 200,
+      "ms": 34.1
+    },
+    {
+      "path": "/companies/TCS/tearsheet",
+      "status": 200,
+      "ms": 36.3
+    },
+    {
+      "path": "/screener?min_roe=15",
+      "status": 200,
+      "ms": 31.5
+    },
+    {
+      "path": "/sectors",
+      "status": 200,
+      "ms": 35.1
+    },
+    {
+      "path": "/sectors/IT/companies",
+      "status": 200,
+      "ms": 26.9
+    },
+    {
+      "path": "/peers/IT_Services",
+      "status": 200,
+      "ms": 27.9
+    },
+    {
+      "path": "/companies/TCS/peers/compare",
+      "status": 200,
+      "ms": 38.7
+    },
+    {
+      "path": "/market-cap/TCS",
+      "status": 200,
+      "ms": 23.0
+    },
+    {
+      "path": "/portfolio/stats",
+      "status": 200,
+      "ms": 124.2
+    },
+    {
+      "path": "/companies/TCS/documents",
+      "status": 200,
+      "ms": 30.2
+    }
+  ],
+  "dashboard": {
+    "profile_load_s": {
+      "TCS": 0.07,
+      "INFY": 0.12,
+      "HDFCBANK": 0.08,
+      "ITC": 0.05,
+      "RELIANCE": 0.08
+    },
+    "profile_passed": true,
+    "dashboard_screener_count": 38,
+    "api_screener_count": 38,
+    "screener_match": true
+  },
+  "both_running": true
+}

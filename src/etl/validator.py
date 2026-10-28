@@ -40,6 +40,7 @@ def _bad_urls(docs: pd.DataFrame) -> pd.DataFrame:
     import requests
 
     def ok(u):
+        """Ok."""
         try:
             return requests.head(u, timeout=5, allow_redirects=True).status_code == 200
         except requests.RequestException:
@@ -212,6 +213,7 @@ def validate(t: dict[str, pd.DataFrame], check_urls: bool = False) -> pd.DataFra
             "severity": "INFO",
         }
     )
+
     for n in TS:
         valid = t[n][~t[n]["year"].isin(BAD)]
         cnt = (
@@ -219,19 +221,18 @@ def validate(t: dict[str, pd.DataFrame], check_urls: bool = False) -> pd.DataFra
             .nunique()
             .reindex(sorted(ids), fill_value=0)
         )
-
-    for c in cnt[cnt < 5].index:
-        f.append(
-            {
-                "rule_id": "DQ-16",
-                "table": n,
-                "company_id": c,
-                "year": None,
-                "field": "year",
-                "issue": f"only {cnt[c]} years",
-                "severity": "WARNING",
-            }
-        )
+        for c in cnt[cnt < 5].index:
+            f.append(
+                {
+                    "rule_id": "DQ-16",
+                    "table": n,
+                    "company_id": c,
+                    "year": None,
+                    "field": "year",
+                    "issue": f"only {cnt[c]} years",
+                    "severity": "WARNING",
+                }
+            )
     out = pd.DataFrame(f, columns=COLS)
     logger.info("validation: %d failures", len(out))
     return out

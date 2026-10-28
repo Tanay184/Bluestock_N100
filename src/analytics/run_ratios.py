@@ -72,6 +72,7 @@ def compute(df, log):
     """Compute per-row KPIs and capital allocation labels."""
 
     def note(kind, x, detail):
+        """Note."""
         log.append(f"{kind} | {x['company_id']} | {x['year']} | {detail}")
 
     rows, cap = [], []

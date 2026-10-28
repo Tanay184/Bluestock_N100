@@ -1029,4 +1029,7 @@ DQ-14,profitandloss,TATAPOWER,2014-03,eps,eps<=0 with profit>0,WARNING
 DQ-14,profitandloss,VBL,2016-12,eps,eps<=0 with profit>0,WARNING
 DQ-14,profitandloss,ZOMATO,2024-03,eps,eps<=0 with profit>0,WARNING
 DQ-15,balancesheet,ALL,,total_assets,0 rows not strictly balanced,INFO
+DQ-16,profitandloss,JIOFIN,,year,only 2 years,WARNING
+DQ-16,balancesheet,JIOFIN,,year,only 3 years,WARNING
+DQ-16,balancesheet,SBIN,,year,only 0 years,WARNING
 DQ-16,cashflow,JIOFIN,,year,only 2 years,WARNING

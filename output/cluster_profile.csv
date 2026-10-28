@@ -1,0 +1,6 @@
+cluster_id,cluster_name,companies,return_on_equity_pct_mean,return_on_equity_pct_median,debt_to_equity_mean,debt_to_equity_median,revenue_cagr_5yr_mean,revenue_cagr_5yr_median,fcf_cagr_5yr_mean,fcf_cagr_5yr_median,operating_profit_margin_pct_mean,operating_profit_margin_pct_median,closest_members
+0,High-Quality Compounders,14,718.71,52.55,0.59,0.1,12.34,10.4,25.28,33.11,30.88,25.81,"ADANIPOWER, TCS, BRITANNIA, BEL, NESTLEIND"
+1,Distressed or Turnaround,35,16.06,15.09,0.45,0.26,7.74,8.4,12.84,11.57,20.94,20.26,"ONGC, RELIANCE, MARUTI, AMBUJACEM, IOC"
+2,Value Cyclicals,18,15.7,14.34,1.42,0.6,19.03,17.48,-0.05,3.16,16.62,16.01,"TATAPOWER, JSWSTEEL, DMART, APOLLOHOSP, ADANIENSOL"
+3,Defensive Dividend Payers,12,13.24,14.47,0.48,0.05,14.16,13.04,28.24,13.09,82.43,86.51,"HINDALCO, HINDUNILVR, ICICIGI, BHARTIARTL, JIOFIN"
+4,Emerging Growth,13,17.28,15.83,7.77,6.86,18.46,17.48,-5.75,-7.36,57.04,41.75,"ICICIBANK, CANBK, INDUSINDBK, HDFCBANK, BANKBARODA"

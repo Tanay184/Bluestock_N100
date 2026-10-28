@@ -71,11 +71,13 @@ class Company:
 
 # ---- pro rules: each returns (confidence or None, info dict) ----
 def pro_roe_high(c):
+    """Pro roe high."""
     v = c.vals("return_on_equity_pct")
     return (conf(min(v[-3:]) - 20, 20), {}) if all_above(v, 20, 3) else (None, {})
 
 
 def pro_fcf_positive(c):
+    """Pro fcf positive."""
     if not all_above(c.vals("free_cash_flow_cr"), 0, 5):
         return None, {}
     m = c.vals("fcf_margin_pct")[-5:]
@@ -83,25 +85,30 @@ def pro_fcf_positive(c):
 
 
 def pro_debt_free(c):
+    """Pro debt free."""
     return (95.0, {}) if c.last("debt_to_equity") == 0 else (None, {})
 
 
 def pro_rev_cagr(c):
+    """Pro rev cagr."""
     x = c.last("revenue_cagr_5yr")
     return (conf(x - 15, 15), {}) if x is not None else (None, {})
 
 
 def pro_opm_high(c):
+    """Pro opm high."""
     x = c.last("operating_profit_margin_pct")
     return (conf(x - 25, 25), {}) if x is not None else (None, {})
 
 
 def pro_pat_cagr(c):
+    """Pro pat cagr."""
     x = c.last("pat_cagr_5yr")
     return (conf(x - 20, 20), {}) if x is not None else (None, {})
 
 
 def pro_icr(c):
+    """Pro icr."""
     if c.last_raw("icr_label") == "Debt Free":
         return 90.0, {}
     x = c.last("interest_coverage")
@@ -109,6 +116,7 @@ def pro_icr(c):
 
 
 def pro_dividend(c):
+    """Pro dividend."""
     fcf = c.last("free_cash_flow_cr")
     if c.div_yield is None or fcf is None or fcf <= 0:
         return None, {}
@@ -116,16 +124,19 @@ def pro_dividend(c):
 
 
 def pro_eps_cagr(c):
+    """Pro eps cagr."""
     x = c.last("eps_cagr_5yr")
     return (conf(x - 15, 15), {}) if x is not None else (None, {})
 
 
 def pro_roe_improving(c):
+    """Pro roe improving."""
     v = c.vals("return_on_equity_pct")
     return (conf(v[-1] - v[-4], 10), {}) if streak(v, 3, up=True) else (None, {})
 
 
 def pro_operating_leverage(c):
+    """Pro operating leverage."""
     pat, rev = c.last("pat_cagr_5yr"), c.last("revenue_cagr_5yr")
     if pat is None or rev is None or rev <= 0:
         return None, {}
@@ -133,6 +144,7 @@ def pro_operating_leverage(c):
 
 
 def pro_assets_up_debt_down(c):
+    """Pro assets up debt down."""
     ta, debt = c.vals("total_assets"), c.vals("total_debt_cr")
     if (
         len(ta) < 2
@@ -146,11 +158,13 @@ def pro_assets_up_debt_down(c):
 
 # ---- con rules ----
 def con_de_high(c):
+    """Con de high."""
     x = c.last("debt_to_equity")
     return (conf(x - 2, 3), {"x": f"{x:.1f}x"}) if x is not None else (None, {})
 
 
 def con_fcf_negative(c):
+    """Con fcf negative."""
     v = c.vals("free_cash_flow_cr")
     if not all_below(v, 0, 3):
         return None, {}
@@ -159,16 +173,19 @@ def con_fcf_negative(c):
 
 
 def con_opm_declining(c):
+    """Con opm declining."""
     v = c.vals("operating_profit_margin_pct")
     return (conf(v[-4] - v[-1], 5), {}) if streak(v, 3, up=False) else (None, {})
 
 
 def con_net_loss(c):
+    """Con net loss."""
     x = c.last("net_profit")
     return (95.0, {}) if x is not None and x < 0 else (None, {})
 
 
 def con_revenue_declining(c):
+    """Con revenue declining."""
     v = c.vals("sales")
     if not streak(v, 2, up=False) or v[-3] <= 0:
         return None, {}
@@ -176,6 +193,7 @@ def con_revenue_declining(c):
 
 
 def con_icr_low(c):
+    """Con icr low."""
     x = c.last("interest_coverage")
     if x is None or c.last_raw("icr_label") == "Debt Free":
         return None, {}
@@ -183,16 +201,19 @@ def con_icr_low(c):
 
 
 def con_payout_high(c):
+    """Con payout high."""
     x = c.last("dividend_payout_ratio_pct")
     return (conf(x - 100, 100), {}) if x is not None else (None, {})
 
 
 def con_de_rising(c):
+    """Con de rising."""
     v = c.vals("debt_to_equity")
     return (conf(v[-1] - v[-4], 1.0), {}) if streak(v, 3, up=True) else (None, {})
 
 
 def con_eps_declining(c):
+    """Con eps declining."""
     v = c.vals("earnings_per_share")
     if not streak(v, 3, up=False) or v[-4] <= 0:
         return None, {}
@@ -200,11 +221,13 @@ def con_eps_declining(c):
 
 
 def con_roce_low(c):
+    """Con roce low."""
     x = c.last("roce_pct")
     return (conf(10 - x, 10), {}) if x is not None else (None, {})
 
 
 def con_net_debt_ebitda(c):
+    """Con net debt ebitda."""
     nd, op = c.last("net_debt_cr"), c.last("operating_profit")
     if nd is None or op is None or op <= 0:
         return None, {}
@@ -212,6 +235,7 @@ def con_net_debt_ebitda(c):
 
 
 def con_rev_cagr_low(c):
+    """Con rev cagr low."""
     x = c.last("revenue_cagr_5yr")
     return (conf(5 - x, 5), {}) if x is not None else (None, {})
 

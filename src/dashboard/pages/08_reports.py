@@ -14,6 +14,7 @@ def check_urls(urls: tuple[str, ...]) -> dict[str, bool]:
     """HEAD-request each URL; True when it answers HTTP 200."""
 
     def ok(u: str) -> bool:
+        """Ok."""
         try:
             return requests.head(u, timeout=6, allow_redirects=True).status_code == 200
         except requests.RequestException:

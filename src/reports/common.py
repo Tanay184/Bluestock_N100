@@ -224,6 +224,7 @@ class Data:
 
     def __init__(self, conn: sqlite3.Connection) -> None:
         def grouped(sql: str) -> dict[str, pd.DataFrame]:
+            """Grouped."""
             df = pd.read_sql(sql, conn)
             return {k: g.reset_index(drop=True) for k, g in df.groupby("company_id")}
 
