@@ -14,7 +14,12 @@ def test_combined_filters_hold(client):
     rows = client.get(
         f"{BASE}/screener", params={"min_roe": 10, "max_de": 1, "min_fcf": 0}
     ).json()
-    assert all(r["roe"] >= 10 and r["de"] <= 1 and r["fcf"] >= 0 for r in rows)
+    assert all(
+        r["roe"] >= 10
+        and (r["de"] <= 1 or r["broad_sector"] == "Financials")
+        and r["fcf"] >= 0
+        for r in rows
+    )
 
 
 def test_results_ranked_by_score(client):

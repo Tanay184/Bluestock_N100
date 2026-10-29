@@ -427,7 +427,7 @@ pytest tests/ -q                          # test suite
         [
             "Thresholds for the presets live in config/screener_config.yaml. Edit that file to create your own screens, then run python -m src.analytics.screener to refresh the Excel output.",
             "A company with a missing value (N/A) on a filtered metric is excluded, because it cannot be shown to pass.",
-            "Sliders for D/E, P/E and P/B are maximums; the others are minimums. Interest coverage treats debt-free companies as passing.",
+            "Sliders for D/E, P/E and P/B are maximums; the others are minimums. Interest coverage treats debt-free companies as passing. The D/E maximum is not applied to Financials (banks and NBFCs).",
             "The same filters are available through the API: GET /api/v1/screener?min_roe=15&max_de=1.",
         ]
     )

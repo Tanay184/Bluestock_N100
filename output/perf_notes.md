@@ -1,36 +1,36 @@
 # Performance notes
 
-Run at 2026-10-28T05:01:44+00:00 (UTC).
+Run at 2026-10-29T16:33:57+00:00 (UTC).
 
 ## Load test: 10 concurrent screener calls
 
-- 10/10 succeeded; all finished in 0.16 s (slowest 0.15 s). Target 10 s: **PASS**
+- 10/10 succeeded; all finished in 0.17 s (slowest 0.16 s). Target 10 s: **PASS**
 
 ## API response times (one request each, cold cache for the first screener call)
 
 | Endpoint | Status | ms |
 |---|---|---|
-| /portfolio/stats | 200 | 124.2 |
-| /companies/TCS/peers/compare | 200 | 38.7 |
-| /companies/TCS/tearsheet | 200 | 36.3 |
-| /sectors | 200 | 35.1 |
-| /companies/TCS/ratios | 200 | 34.1 |
-| /companies/TCS/pl | 200 | 32.3 |
-| /screener?min_roe=15 | 200 | 31.5 |
-| /companies/TCS/bs | 200 | 31.2 |
-| /companies/TCS/documents | 200 | 30.2 |
-| /companies/TCS/cashflow | 200 | 29.1 |
-| /peers/IT_Services | 200 | 27.9 |
-| /sectors/IT/companies | 200 | 26.9 |
-| /market-cap/TCS | 200 | 23.0 |
-| /companies/TCS | 200 | 17.2 |
-| /companies | 200 | 17.0 |
-| /health | 200 | 5.4 |
+| /portfolio/stats | 200 | 128.1 |
+| /companies/TCS/tearsheet | 200 | 67.0 |
+| /sectors | 200 | 56.2 |
+| /companies | 200 | 41.2 |
+| /sectors/IT/companies | 200 | 38.6 |
+| /peers/IT_Services | 200 | 37.1 |
+| /screener?min_roe=15 | 200 | 33.4 |
+| /companies/TCS/ratios | 200 | 32.3 |
+| /companies/TCS/pl | 200 | 31.4 |
+| /market-cap/TCS | 200 | 31.3 |
+| /companies/TCS/documents | 200 | 29.1 |
+| /companies/TCS/bs | 200 | 29.0 |
+| /companies/TCS/peers/compare | 200 | 29.0 |
+| /health | 200 | 25.1 |
+| /companies/TCS | 200 | 23.5 |
+| /companies/TCS/cashflow | 200 | 16.4 |
 
 ## Dashboard
 
-- Company Profile load time (server-side): {'TCS': 0.07, 'INFY': 0.12, 'HDFCBANK': 0.08, 'ITC': 0.05, 'RELIANCE': 0.08}. Target under 3 s each: **PASS**
-- Screener ROE >= 15 and D/E <= 1: dashboard 38 companies, API 38: **MATCH**
+- Company Profile load time (server-side): {'TCS': 0.08, 'INFY': 0.12, 'HDFCBANK': 0.07, 'ITC': 0.08, 'RELIANCE': 0.08}. Target under 3 s each: **PASS**
+- Screener ROE >= 15 and D/E <= 1: dashboard 49 companies, API 49: **MATCH**
 
 ## End to end
 

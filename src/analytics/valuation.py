@@ -60,6 +60,7 @@ def main() -> None:
     val = build_valuation(conn)
     conn.close()
     OUT.mkdir(exist_ok=True)
+    val["data_source"] = "SIMULATED"
     val.to_excel(OUT / "valuation_summary.xlsx", index=False)
     val[val["flag"].isin(["Caution", "Discount"])].to_csv(
         OUT / "valuation_flags.csv", index=False

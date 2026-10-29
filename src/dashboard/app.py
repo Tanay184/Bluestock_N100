@@ -25,5 +25,7 @@ PAGES = [
 nav = st.navigation(
     [st.Page(p, title=t, icon=i) for p, t, i in PAGES if (HERE / p).exists()]
 )
-st.sidebar.caption("Stock prices and market cap are simulated data.")
+st.sidebar.caption(
+    "Stock prices, market cap and valuation multiples (P/E, P/B, EV/EBITDA, dividend yield) are SIMULATED data."
+)
 nav.run()

@@ -69,7 +69,7 @@ def footer(canvas, doc) -> None:
     canvas.drawString(
         MARGIN,
         1.0 * cm,
-        "Nifty 100 Financial Intelligence Platform | Portfolio summary | Market data is simulated",
+        "Nifty 100 Financial Intelligence Platform | Portfolio summary | Market data is SIMULATED",
     )
     canvas.drawRightString(A4[0] - MARGIN, 1.0 * cm, f"Page {doc.page}")
     canvas.restoreState()

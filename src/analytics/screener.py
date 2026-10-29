@@ -136,11 +136,23 @@ def add_screen_score(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def condition(df: pd.DataFrame, metric: str, op: str, value: float) -> pd.Series:
+    """Boolean mask for one filter; D/E upper limits are not applied to the Financials sector."""
+    mask = OPS[op](df[metric], value)
+    if (
+        metric in ("de", "debt_to_equity")
+        and op in ("<", "<=")
+        and "broad_sector" in df.columns
+    ):
+        mask = mask | (df["broad_sector"] == "Financials")
+    return mask
+
+
 def apply_filters(df: pd.DataFrame, filters: list[dict]) -> pd.DataFrame:
     """Keep rows passing every filter; missing values fail."""
     mask = pd.Series(True, index=df.index)
     for f in filters:
-        mask &= OPS[f["op"]](df[f["metric"]], f["value"])
+        mask &= condition(df, f["metric"], f["op"], f["value"])
     return df[mask]
 
 

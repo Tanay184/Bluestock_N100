@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 
-from src.analytics.screener import OPS, load_config
+from src.analytics.screener import condition, load_config
 from src.dashboard.utils import db
 
 CFG = load_config()
@@ -90,6 +90,7 @@ for s in SLIDERS:
 st.session_state.setdefault("extras", [])
 
 st.title("Financial Screener")
+st.caption("P/E, P/B and dividend yield use SIMULATED market data.")
 cols = st.columns(len(PRESETS) + 1)
 for col, (label, name) in zip(cols, PRESETS.items()):
     col.button(label, on_click=apply_preset, args=(name,), key=f"btn_{name}")
@@ -104,12 +105,12 @@ for key, _label, metric, op, _lo, _hi, _step, off in SLIDERS:
     value = st.session_state[key]
     if value == off:
         continue
-    cond = df[metric] >= value if op == ">=" else df[metric] <= value
+    cond = condition(df, metric, op, value)
     if metric == "icr":
         cond = cond | (df["icr_label"] == "Debt Free")
     mask &= cond
 for f in st.session_state["extras"]:
-    mask &= OPS[f["op"]](df[f["metric"]], f["value"])
+    mask &= condition(df, f["metric"], f["op"], f["value"])
 
 out = (
     df[mask]

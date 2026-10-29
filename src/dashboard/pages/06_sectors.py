@@ -43,7 +43,7 @@ else:
     )
     st.plotly_chart(fig)
     st.caption(
-        f"{len(bub)} of {len(sub)} companies shown (need revenue, ROE and market cap). Market cap is simulated."
+        f"{len(bub)} of {len(sub)} companies shown (need revenue, ROE and market cap). Market cap is SIMULATED."
     )
 
 med = pd.DataFrame(

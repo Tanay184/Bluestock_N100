@@ -4,6 +4,7 @@ import sqlite3
 
 from fastapi import APIRouter, HTTPException, Query
 
+from src.analytics.screener import condition
 from src.api.deps import CONN, df_records, get_snapshot, parse_float, resolve_sector
 
 router = APIRouter(tags=["screener"])
@@ -75,7 +76,7 @@ def screener(
         if value is None:
             continue
         col, op = FILTERS[name]
-        df = df[df[col] >= value] if op == ">=" else df[df[col] <= value]
+        df = df[condition(df, col, op, value)]
     df = df.sort_values(["screen_score", "company_id"], ascending=[False, True])
     out = df_records(df[FIELDS])
     return [{"rank": i, **r} for i, r in enumerate(out, 1)]

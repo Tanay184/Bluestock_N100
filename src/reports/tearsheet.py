@@ -48,7 +48,7 @@ def footer(canvas, doc) -> None:
     canvas.drawString(
         MARGIN,
         0.8 * cm,
-        "Nifty 100 Financial Intelligence Platform | Source: nifty100.db | Market data is simulated",
+        "Nifty 100 Financial Intelligence Platform | Source: nifty100.db | Market data is SIMULATED",
     )
     canvas.drawRightString(A4[0] - MARGIN, 0.8 * cm, f"Page {doc.page} of 2")
     canvas.restoreState()
@@ -227,7 +227,7 @@ def build_tearsheet(d: Data, ticker: str, path: Path) -> int:
         Spacer(1, 4),
         Paragraph(
             "Pros and cons are generated from KPI threshold rules and are not investment advice. "
-            "Ratios use annual filings; market data is simulated.",
+            "Ratios use annual filings; market data is SIMULATED.",
             SMALL,
         ),
     ]

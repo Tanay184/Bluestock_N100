@@ -8,7 +8,7 @@ from src.dashboard.utils.ui import fmt
 
 st.title("Nifty 100 Analytics")
 st.caption(
-    "Fundamental analytics for 92 Nifty 100 companies. Prices and market caps are simulated."
+    "Fundamental analytics for 92 Nifty 100 companies. Prices, market caps and valuation multiples are SIMULATED."
 )
 year = st.sidebar.selectbox("Year", list(range(2024, 2018, -1)))
 
